@@ -1,8 +1,8 @@
 ---
-title: About Alembic
+title: Binhminh Knowledge
 feature_text: |
-  ## Alembic
-  A Jekyll boilerplate theme designed to be a starting point for any Jekyll website
+  ## Binhminh
+  A website for more information
 feature_image: "https://cdn.pixabay.com/photo/2021/06/04/04/52/04-52-25-709_960_720.png"
 excerpt: "Alembic is a starting point for projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
 ---
