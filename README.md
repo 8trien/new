@@ -1,11 +1,8 @@
-# [Alembic](https://alembic.darn.es/)
-[![Gem Version](https://badge.fury.io/rb/alembic-jekyll-theme.svg)](https://badge.fury.io/rb/alembic-jekyll-theme)
-
+# [Alembic]
 ⚗ A Jekyll boilerplate theme designed to be a starting point for any Jekyll website.
 
-![Screenshot](https://raw.githubusercontent.com/daviddarnes/alembic/master/screenshot.png)
+![Screenshot](https://cdn.pixabay.com/photo/2015/07/27/20/16/book-863418_960_720.jpg)
 
-[<img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" width="217"/>](https://buymeacoffee.com/daviddarnes#support)
 
 ## Contents
 - [About](#about)
@@ -35,42 +32,10 @@
 - Built in **Service Worker** so it can work offline and on slow connections
 - **Configurable colours** and typography in a single settings file
 - Extensive set of **shortcodes** to include various elements; such as buttons, icons, figure images and more
-- Solid **typographic framework** from [Sassline](https://sassline.com/)
-- Configurable navigation via a single file
-- Modular Jekyll components
-- Post category support in the form of a single post index page grouped by category
-- Built in live search using JavaScript
-- **Contact form** built in using [Formspree](https://formspree.io/) or [Netlify Forms](https://www.netlify.com/features/#forms)
-- Designed with **[Siteleaf](http://www.siteleaf.com/)** in mind
-- Has 9 of the most popular networks as performant sharing buttons
-- Has documentation
 
-## Examples
-
-Here are a few examples of Alembic out in the wild being used in a variety of ways:
-
-- [billmei.net](https://billmei.net/)
-- [bawejakunal.github.io](https://bawejakunal.github.io/)
-- [case2111.github.io](https://case2111.github.io/)
-- [karateca.org](https://www.karateca.org/)
 
 ## Installation
 
-### Quick setup
-
-To give you a running start I've put together some starter kits that you can download, fork or even deploy immediately:
-
-- Vanilla Jekyll starter kit:  
-  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-kit)
-- Forestry starter kit:  
-  [![Deploy to Forestry](https://assets.forestry.io/import-to-forestry.svg)](https://app.forestry.io/quick-start?repo=daviddarnes/alembic-forestry-kit&engine=jekyll)  
-  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-forestry-kit)
-- Netlify CMS starter kit:  
-  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-netlifycms-kit&stack=cms)
-
-- GitHub Pages with remote theme kit - **[Download kit](https://github.com/daviddarnes/alembic-kit/archive/remote-theme.zip)**
-- Stackbit starter kit:  
-  [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/daviddarnes/alembic-stackbit-kit)
 
 ### As a Jekyll theme
 
@@ -78,7 +43,7 @@ To give you a running start I've put together some starter kits that you can dow
 2. Run the command `bundle install` in the root of project to install the theme and its dependancies
 3. Add `theme: alembic-jekyll-theme` to your `_config.yml` file to set the site theme
 4. Run `bundle exec jekyll serve` to build and serve your site
-5. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
+5. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`]
 
 ### As a GitHub Pages remote theme
 
@@ -89,16 +54,6 @@ To give you a running start I've put together some starter kits that you can dow
 5. Run `bundle exec jekyll serve` to build and serve your site
 6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
 
-### As a Boilerplate / Fork
-
-_(deprecated, not recommended)_
-
-1. [Fork the repo](https://github.com/daviddarnes/alembic#fork-destination-box)
-2. Replace the `Gemfile` with one stating all the gems used in your project
-3. Delete the following unnecessary files/folders: `.github`, `LICENSE`, `screenshot.png`, `CNAME` and `alembic-jekyll-theme.gemspec`
-4. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
-5. Run `bundle exec jekyll serve` to build and serve your site
-6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
 
 ## Customising
 
@@ -213,37 +168,17 @@ Example usage: `{% include video.html id="zrkcGL5H3MU" %}`
 Available options:
 - `id`: The YouTube ID for the video _required_
 
-### `map.html`
-A Google map. _See Google [My Maps](https://www.google.com/mymaps)_
-
-Example usage: `{% include map.html id="1UT-2Z-Vg_MG_TrS5X2p8SthsJhc" %}`
-
-Available options:
-- `id`: The map ID for the video _required_
 
 ### `site-form.html`
-Adds a contact form to the page. This can be used with [Formspree](https://formspree.io/) or [Netlify Forms](https://www.netlify.com/docs/form-handling/) depending on your setup.
 
-Example usage: `{% include site-form.html %}`
-
-Available options:
-- `netlify_form=true`: Set whether you would like to use Netlify Forms, otherwise the form will default to Formspree
-- `name`: Give the form a name, by default the form is called "Contact". The name will be reflected when form submissions come through in Netlify or in your email client. The name is also used in the label and input elements for accessibility
-
-
-Use the `email` option in the `/_config.yml` to change to the desired email.
 
 ### `site-search.html`
-Adds a search form to the page.
 
-Example usage: `{% include site-search.html %}`
-
-This include has no options. This include will add a block of javascript to the page and javascript reference in order for the search field to work correctly.
 
 ### `site-before-start.html` & `site-before-end.html`
 Optional html includes for adding scripts, css, js or any embed code you wish to add to every page without the need to overwrite the entire `default.html` template.
 
-**Example usage:** These are different to other includes as they are designed to be overwritten. If you create a `site-before-start.html` file in the `_includes/` the contents of the file will be included immediately before the closing `</head>` tag. If you create a `site-before-end.html` file the contents of the file will be included immediately before the closing `</body>` tag.
+**Example usage:** 
 
 ## Page layouts
 
@@ -266,8 +201,3 @@ There are some more specific options you can apply when creating a page or a pos
 
 ## Credits
 
-- Thanks to [Simple Icons](https://simpleicons.org/) for providing the brand icons, by [Dan Leech](https://twitter.com/bathtype)
-- Thanks to [Sassline](https://sassline.com/) for the typographic basis, by [Jake Giltsoff](https://twitter.com/jakegiltsoff)
-- Thanks to [Flexbox mixin](https://github.com/mastastealth/sass-flex-mixin) by [Brian Franco](https://twitter.com/brianfranco)
-- Thanks to [Normalize](https://necolas.github.io/normalize.css/) by [Nicolas Gallagher](https://twitter.com/necolas) and [Jonathan Neal](https://twitter.com/jon_neal).
-- Thanks to [pygments-css](http://richleland.github.io/pygments-css/) for the autumn syntax highlighting, by [Rich Leland](https://twitter.com/richleland)
